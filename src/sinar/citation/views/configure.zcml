@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="sinar.citation">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="citation-view"
+    for="Products.CMFCore.interfaces.IFolderish"
+    class=".citation_view.CitationView"
+    template="citation_view.pt"
+    permission="zope2.View"
+    />
+
+
+</configure>
