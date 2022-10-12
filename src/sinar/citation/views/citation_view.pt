@@ -23,6 +23,8 @@
 
             <div tal:replace="structure provider:plone.abovecontentbody" />
 
+            <div tal:content="structure context/text/output | nothing"
+                 />
             <p>
             <span tal:replace="context/author"/>,&nbsp;
             (<span
@@ -33,6 +35,7 @@
                               tal:replace="python:context.toLocalizedTime(context.modified())"/>,&nbsp;
                               from <span tal:replace="structure
                               view/w/url/render" />
+            </p>
 
             <div tal:replace="structure provider:plone.belowcontentbody" />
 
