@@ -7,7 +7,7 @@ from plone.supermodel import model
 from sinar.citation import _
 # from plone.supermodel.directives import fieldset
 # from z3c.form.browser.radio import RadioFieldWidget
-from collective import dexteritytextindexer
+from plone.app.dexterity import textindexer
 from zope import schema
 from zope.interface import implementer
 
@@ -32,7 +32,7 @@ class ICitation(model.Schema):
     #     required=False
     # )
 
-    dexteritytextindexer.searchable('author')
+    textindexer.searchable('author')
     author = schema.TextLine(
         title=_(u'Author or Website Name'),
         required=False,
