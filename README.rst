@@ -24,6 +24,8 @@
     :alt: License
 
 
+** Deprecated. Implemented as Citation behavior in sinar.resource **
+
 ==============
 sinar.citation
 ==============
